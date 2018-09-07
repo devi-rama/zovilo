@@ -1,0 +1,273 @@
+<!--Main layout-->
+    <main>
+      <div class="card text-center" style="margin-top: -2.3rem; z-index: 1030;">
+        <div class="row">
+          <div class="col-6">
+            <!-- Button trigger modal -->
+            <a href="#" class="btn btn-outline-cyan" data-toggle="modal" data-target="#modalFilters">
+              <i class="fa fa-sort-alpha-asc"></i> Sort</a>
+          </div>
+          <div class="col-6">
+            <a href="#" class="btn btn-outline-cyan" data-toggle="modal" data-target="#modalFilters">
+              <i class="fa fa-filter"></i> Filter</a>
+          </div>
+        </div>
+      </div>
+       <!--Main container-->
+        <div class="container">
+
+          <div class="row">
+            <div class="col-12">
+              
+              <!-- Modal -->
+              <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+            <!--Grid row-->
+            <div class="row">                       
+            <table class="card" style="width:100%;margin-left: 2px">
+               <tbody>
+                    <tr class="row" style="padding: 15px">
+                        <td class="col-4">
+                          <a href="#!/product/detail/{{id}}">
+                           <img src="assets/img/product1.jpg" alt="product1" style="height:80px; width:100px">
+                          </a>
+                        </td>
+                        <td class="col-8" >                                        
+                            <span class="pull-right" style="padding-left: 3px">
+                                <a href="#" >
+                                    <i class="fa fa-heart-o" style="color: gray"></i>
+                                </a>
+                            </span>
+                            <a href="#">
+                                <h6 class="card-title" style="color: gray; font-size: 14px; font-weight: bold ">Samsung Q Series 163cm (65 inch) Ultra HD (4K) QLED Smart TV (65Q8CN)</h6>
+                            </a>
+                            <span style="padding: 0px;" class="faStarColor">
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                            <p class="card-text">
+                                <i class="fa fa-inr" style="color:gray"></i> 439900.00
+                            </p>
+                            <span class="pull-left">
+                                <a href="#" class="btn btn-sm btn-outline-cyan" role="button" id="add-cart">
+                                    <span style="font-weight: bold">Add to cart</span></a>
+                            </span>
+                        </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="row">
+              <table class="card" style="width:100%;margin-left: 2px">
+                <tbody>
+
+              <tr class="row" style="padding: 15px">
+                  <td class="col-4">
+                     <img src="assets/img/product2.jpg" alt="product2" style="height:130px; width:65px">
+                  </td>
+                  <td class="col-8" >                                        
+                      <span class="pull-right" style="padding-left: 3px">
+                          <a href="#" >
+                              <i class="fa fa-heart-o" style="color: gray"></i>
+                          </a>
+                      </span>
+                      <a href="#">
+                          <h6 class="card-title" style="color: gray; font-size: 14px; font-weight: bold ">OPPO F7 (Silver, 64 GB) (4 GB RAM)</h6>
+                      </a>
+                      <span style="padding: 0px;" class="faStarColor">
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                      </span>
+                      <p class="card-text">
+                          <i class="fa fa-inr" style="color:gray"></i> 190.00
+                      </p>
+                      <span class="pull-left">
+                          <a href="#" class="btn btn-sm btn-outline-cyan" role="button" id="add-cart">
+                              <span style="font-weight: bold">Add to cart</span></a>
+                      </span>
+                  </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="row">
+          <table class="card" style="width:100%;margin-left: 2px">
+            <tbody>
+
+            <tr class="row" style="padding: 15px">
+              <td class="col-4">
+                 <img src="assets/img/product3.jpg" alt="product3" style="height:130px; width:65px">
+              </td>
+              <td class="col-8" >                                        
+                  <span class="pull-right" style="padding-left: 3px">
+                      <a href="#" >
+                          <i class="fa fa-heart-o" style="color: gray"></i>
+                      </a>
+                  </span>
+                  <a href="#">
+                      <h6 class="card-title" style="color: gray; font-size: 14px; font-weight: bold ">VIVO V9 (Gold, 64 GB) (4 GB RAM)</h6>
+                  </a>
+                  <span style="padding: 0px;" class="faStarColor">
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                  </span>
+                  <p class="card-text">
+                      <i class="fa fa-inr" style="color:gray"></i> 149.00
+                  </p>
+                  <span class="pull-left">
+                      <a href="#" class="btn btn-sm btn-outline-cyan" role="button" id="add-cart">
+                          <span style="font-weight: bold">Add to cart</span></a>
+                  </span>
+              </td>
+           </tr>
+          </tbody>
+       </table>                    
+    </div>
+
+     <div class="row">                       
+            <table class="card" style="width:100%;margin-left: 2px">
+               <tbody>
+                    <tr class="row" style="padding: 15px">
+                        <td class="col-4">
+                           <img src="assets/img/product1.jpg" alt="product1" style="height:80px; width:100px">
+                        </td>
+                        <td class="col-8" >                                        
+                            <span class="pull-right" style="padding-left: 3px">
+                                <a href="#" >
+                                    <i class="fa fa-heart-o" style="color: gray"></i>
+                                </a>
+                            </span>
+                            <a href="#">
+                                <h6 class="card-title" style="color: gray; font-size: 14px; font-weight: bold ">Samsung Q Series 163cm (65 inch) Ultra HD (4K) QLED Smart TV (65Q8CN)</h6>
+                            </a>
+                            <span style="padding: 0px;" class="faStarColor">
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </span>
+                            <p class="card-text">
+                                <i class="fa fa-inr" style="color:gray"></i> 439900.00
+                            </p>
+                            <span class="pull-left">
+                                <a href="#" class="btn btn-sm btn-outline-cyan" role="button" id="add-cart">
+                                    <span style="font-weight: bold">Add to cart</span></a>
+                            </span>
+                        </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="row">
+              <table class="card" style="width:100%;margin-left: 2px">
+                <tbody>
+
+              <tr class="row" style="padding: 15px">
+                  <td class="col-4">
+                     <img src="assets/img/product2.jpg" alt="product2" style="height:130px; width:65px">
+                  </td>
+                  <td class="col-8" >                                        
+                      <span class="pull-right" style="padding-left: 3px">
+                          <a href="#" >
+                              <i class="fa fa-heart-o" style="color: gray"></i>
+                          </a>
+                      </span>
+                      <a href="#">
+                          <h6 class="card-title" style="color: gray; font-size: 14px; font-weight: bold ">OPPO F7 (Silver, 64 GB) (4 GB RAM)</h6>
+                      </a>
+                      <span style="padding: 0px;" class="faStarColor">
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                      </span>
+                      <p class="card-text">
+                          <i class="fa fa-inr" style="color:gray"></i> 190.00
+                      </p>
+                      <span class="pull-left">
+                          <a href="#" class="btn btn-sm btn-outline-cyan" role="button" id="add-cart">
+                              <span style="font-weight: bold">Add to cart</span></a>
+                      </span>
+                  </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="row">
+          <table class="card" style="width:100%;margin-left: 2px">
+            <tbody>
+
+            <tr class="row" style="padding: 15px">
+              <td class="col-4">
+                 <img src="assets/img/product3.jpg" alt="product3" style="height:130px; width:65px">
+              </td>
+              <td class="col-8" >                                        
+                  <span class="pull-right" style="padding-left: 3px">
+                      <a href="#" >
+                          <i class="fa fa-heart-o" style="color: gray"></i>
+                      </a>
+                  </span>
+                  <a href="#">
+                      <h6 class="card-title" style="color: gray; font-size: 14px; font-weight: bold ">VIVO V9 (Gold, 64 GB) (4 GB RAM)</h6>
+                  </a>
+                  <span style="padding: 0px;" class="faStarColor">
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                  </span>
+                  <p class="card-text">
+                      <i class="fa fa-inr" style="color:gray"></i> 149.00
+                  </p>
+                  <span class="pull-left">
+                      <a href="#" class="btn btn-sm btn-outline-cyan" role="button" id="add-cart">
+                          <span style="font-weight: bold">Add to cart</span></a>
+                  </span>
+              </td>
+           </tr>
+          </tbody>
+       </table>                    
+    </div>               
+          
+
+        </div>
+        <!--Main container-->
+    </main>
+    <!--Main layout-->

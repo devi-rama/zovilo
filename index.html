@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="zovilo">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>zovilo</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="assets/css/mdb.min.css" rel="stylesheet">    
+    <!-- Your custom styles (optional) -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style type="text/css">
+        .scrollbar
+        {
+          /*margin-left: 30px;*/
+          float: left;
+          /*height: 300px;*/
+          width: -webkit-fill-available;
+          /*background: #F5F5F5;*/
+          overflow-y: auto;
+          overflow-x: hidden;
+          margin-bottom: 25px;
+        }
+
+        .sidenav-scrollbar::-webkit-scrollbar-track
+        {
+          -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+          border-radius: 10px;
+          background-color: #7d7c7c;
+        }
+
+        .sidenav-scrollbar::-webkit-scrollbar
+        {
+          width: 12px;
+          background-color: #7d7c7c;
+        }
+
+        .sidenav-scrollbar::-webkit-scrollbar-thumb
+        {
+          border-radius: 10px;
+          -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+          background-color: #555;
+        }
+    </style>
+</head>
+
+<body class="fixed-sn">
+
+    <!-- Start your project here-->
+    <!--Main Navigation-->
+    <header>
+
+      <!-- Sidebar navigation -->
+      <div id="slide-out" class="side-nav fixed">
+        <ul class="scrollbar sidenav-scrollbar">
+            <li>
+                <div class="row">
+                    <div class="col-5" id="avatarAlign">
+                        <a href="#"><img src="assets/img/default.jpg" class="img-fluid flex-center" id="userAvatar"></a>
+                    </div>
+                    <div class="col-7" style="margin-top: 40px; text-align: left;padding-left: 0px;margin-left: -15px">
+                        <h6>Jitun Bisoy</h6>
+                    </div>
+                </div>
+            </li>
+        
+            <!-- Logo -->
+            
+            <!--/. Logo -->
+            <!--Social-->
+            
+            <!--/. Social-->
+            
+            
+            <!-- Side navigation links -->
+            <li>
+                <ul class="collapsible collapsible-accordion" style="text-transform: none;">
+                    <li><a class="collapsible-header waves-effect arrow-r hide-sidenav" href="#!/"><i class="fa fa-home"></i> Home</a>
+                        
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r hide-sidenav" href="#!/product/category"><i class="fa fa-sitemap"></i> Shop By Category<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!/product/list/{{id}}" class="waves-effect hide-sidenav">Mobile & Accesories</a>
+                                </li>
+                                <li><a href="#!/product/list/{{id}}" class="waves-effect hide-sidenav">Home Appliances</a>
+                                </li>
+                                <li><a href="#!/product/list/{{id}}" class="waves-effect hide-sidenav">Laptops & Accessories</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r hide-sidenav" href="#!/product/brands"><i class="fa fa-opencart"></i> Shop By Brand</a>
+                        
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r hide-sidenav" href="#!/product/intro"><i class="fa fa-bullhorn"></i> Exclusive Launch</a>
+                       
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r hide-sidenav" href="#!/product/offer"><i class="fa fa-tags"></i> Offer Zone</a>
+                        
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r hide-sidenav" href="#!/order/notification"><i class="fa fa-bell"></i> Notification</a>
+                        
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r hide-sidenav" href="#!/user/profile"><i class="fa fa-user-circle-o"></i> My Account<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!/user/rewards" class="waves-effect hide-sidenav">My Reward</a>
+                                </li>
+                                <li><a href="#!/cart" class="waves-effect hide-sidenav">My Cart</a>
+                                </li>
+                                <li><a href="#!/user/wishlist" class="waves-effect hide-sidenav">Wishlist</a>
+                                </li>
+                                <li><a href="#!/user/orders" class="waves-effect hide-sidenav">Order</a>
+                                </li>
+                                <li><a href="#!/user/address" class="waves-effect hide-sidenav">My Address</a>
+                                </li>
+                                <li><a href="#!/user/reviews" class="waves-effect hide-sidenav">My Review</a>
+                                </li>
+                                <li><a href="#!/user/changepassword" class="waves-effect">Change Password</a>
+                                </li>                         
+                            </ul>
+                        </div>                        
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r hide-sidenav" href="#!"><i class="fa fa-legal"></i> Legal<i class="fa fa-angle-down rotate-icon"></i></a>
+                      <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!/legal/privacy_policy" class="waves-effect hide-sidenav">Privacy Policy</a>
+                                </li>
+                                <li><a href="#!/legal/terms_conditions" class="waves-effect hide-sidenav">Terms & Conditions</a>
+                                </li>
+                                <li><a href="#!/legal/refund_cancellation" class="waves-effect hide-sidenav">Refund & Cancellation</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r hide-sidenav" href="#!"><i class="fa fa-question-circle-o"></i> Help & Support</a>
+                        
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r hide-sidenav" href="#!"><i class="fa fa-power-off"></i> Sign Out</a>                        
+                    </li>
+
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r hide-sidenav" href="#!/trialPage"><i class="fa fa-power-off"></i> Trial Page</a>                        
+                    </li>
+                </ul>
+            </li>
+            <!--/. Side navigation links -->
+        </ul>
+        <div class="sidenav-bg mask-strong"></div>
+      
+      </div>
+      <!--/. Sidebar navigation -->
+
+      <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav" id="navbar-color" >
+            <!-- SideNav slide-out button -->
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse">
+                    <span class="faColor">
+                        <i class="fa fa-bars"></i>
+                    </span>
+                </a>
+            </div>
+
+            
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <span class="faColor">
+                            <i class="fa fa-search"></i>
+                        </span>
+                        <span class="clearfix d-none d-sm-inline-block">Search
+                        </span>
+                    </a>
+                </li> 
+
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <span class="faColor">
+                            <i class="fa fa-shopping-bag"></i>
+                        </span>
+                        <span class="clearfix d-none d-sm-inline-block">Cart
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.Navbar -->
+
+    </header>
+    <!--Main Navigation-->    
+
+    <!-- Content Wrapper. Contains page content -->
+    <!-- <div class="content-wrapper"> -->
+        <div ng-view></div>
+    <!-- </div> -->
+    <!-- /.content-wrapper -->
+
+    <!--Footer-->
+    <footer>
+        
+    </footer>
+    <!--Footer-->
+    
+    <!-- /Start your project here-->
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type = "text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type = "text/javascript" src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type = "text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type = "text/javascript" src="assets/js/mdb.min.js"></script>
+    <!-- Angular core JavaScript -->
+    <script src = "js/angular.min.js"></script>
+    <!-- Angular route JavaScript -->
+    <script src = "js/angular-route.min.js"></script>
+
+    <!-- Home -->
+    <script src="js/controllers/home.js"></script>
+
+    <!-- Product -->
+    <script src="js/controllers/product.js"></script>
+
+    <!-- Order -->
+    <script src="js/controllers/order.js"></script>
+
+    <!-- Profile -->
+    <script src="js/controllers/profile.js"></script>
+
+    <!-- Cart -->
+    <script src="js/controllers/cart.js"></script>
+
+    <!-- Legal -->
+    <script src="js/controllers/legal.js"></script>
+
+    <!-- Trial -->
+    <script src="js/controllers/trial.js"></script>
+
+    <!-- Config -->
+    <script src="js/config.js"></script>
+      
+    <!-- App -->
+    <script src="js/app.js"></script>
+
+    <script type="text/javascript">
+        // SideNav Button Initialization
+        $(".button-collapse").sideNav();
+        // SideNav Scrollbar Initialization
+        var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+        Ps.initialize(sideNavScrollbar);
+    </script>
+
+    <script type="text/javascript">
+        // Material Select Initialization
+        $(document).ready(function() {
+           $('.mdb-select').material_select();
+         });
+    </script>
+    <script type="text/javascript">
+        $(function(){
+            $('.hide-sidenav').click(function(){
+                $('#sidenav-overlay').click()
+            })
+        })
+    </script>
+</body>
+
+</html>

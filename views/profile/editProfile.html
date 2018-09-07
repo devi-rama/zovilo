@@ -1,0 +1,80 @@
+<!--Main layout-->
+    <main>
+       <!--Main container-->
+        <div class="container">
+
+            <!--Grid row-->
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-12" style="text-align: left;color: gray">                    
+
+                    <!-- Edit profile form  -->
+                    <div class="card">
+                        <h3 class="pt-4  ml-3">Basic Information</h3>
+                        <hr>                       
+
+                        <!--Card content-->
+                        <div class="card-body px-lg-5 pt-0">
+
+                            <!-- Form -->
+                            <form class="text-center" style="color: #757575;">
+                                
+                                <!-- First name -->
+                                <div class="md-form">
+                                    <input type="text" id="materialRegisterFormFirstName" class="form-control">
+                                    <label for="materialRegisterFormFirstName">First name</label>
+                                </div>
+                                
+                                <!-- Last name -->
+                                <div class="md-form">
+                                    <input type="email" id="materialRegisterFormLastName" class="form-control">
+                                    <label for="materialRegisterFormLastName">Last name</label>
+                                </div>
+
+                                <!-- Gender -->
+                                <div class="md-form">                                    
+                                    <select class="mdb-select">
+                                        <option value="">Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>  
+                                                                      
+                                </div>
+
+                                <div>
+                                    <!-- Save changes button -->                                    
+                                    <button class="btn btn-info btn-rounded my-4 waves-effect z-depth-0" type="submit">
+                                    <span style="font-weight:bold;">Save Changes</span></button>
+
+                                    <!-- Cancel button -->
+                                    <a href="#!/user/profile" class="btn btn-default btn-rounded my-4 waves-effect z-depth-0" type="submit"><span style="font-weight:bold;">Cancel</span></a>  
+                                </div>
+
+                            </form>
+                            <!-- Form -->
+
+                        </div>
+
+                    </div>
+                    <!-- Edit profile form  -->
+                   
+
+                </div>
+                <!--Grid column-->
+               
+            </div>
+            <!--Grid row-->
+
+        </div>
+        <!--Main container-->
+    </main>
+    <!--Main layout-->
+
+        <script type="text/javascript">
+        // Material Select Initialization
+        $(document).ready(function() {
+           $('.mdb-select').material_select();
+         });
+    </script>
