@@ -55,13 +55,35 @@
                		<strong>Model : </strong> 65Q8CN 
                	</p>
                	<div class="row">
-               		<div class="col-12">
+	               	<div class="col-6">
+		               	<select class="mdb-select md-form">
+						    <option value="" disabled selected>Size</option>
+						    <option value="small">Small</option>
+						    <option value="medium">Medium</option>
+						    <option value="large">Large</option>
+						</select>
+					</div>
+					<div class="col-6">
+						<select class="mdb-select md-form">
+						    <option value="" disabled selected>Color</option>
+						    <option value="red">Red</option>
+						    <option value="blue">Blue</option>
+						    <option value="green">Green</option>
+						</select>				
+					</div>
+				</div>
+               	<div class="row">
+               		<div class="col-12 text-center">
                			<a href="#" class="btn btn-sm btn-outline-cyan" role="button" id="add-cart">
-               				<span style="font-weight: bold">Add to cart</span></a>
-               				<a href="#">    
-               					<span style="padding-left: 10px;"><i class="fa fa-heart-o"></i>
-               					</span>
-               				</a>   	
+               				<span style="font-weight: bold">Add to cart </span>
+               			</a>
+               			<a href="#" class="btn btn-sm btn-outline-cyan" role="button" id="add-cart">
+               				<span style="font-weight: bold">Add to wishlist </span>
+               			</a>
+           				<!-- <a href="#">    
+           					<span style="padding-left: 10px;"><i class="fa fa-heart-o"></i>
+           					</span>
+           				</a> -->   	
                			</div>
                		</div>
                		<div class="row" style="margin-top: 20px">
@@ -194,8 +216,7 @@
                								</tr>
                							</thead>
                						</table>
-               					</div>						                	
-
+               					</div>	
                				</div>
                			</div>
                			<hr>
@@ -203,30 +224,28 @@
                				<div class="col-12">
 	               				<label for="" class="faColor" style="font-weight: bold; padding-top: 10px">Ratings & Reviews</label>
 	               				
-								<a href="" class="btn btn-default btn-sm mb-4" data-toggle="modal" data-target="#modalContactForm" style="float:right">Rate Product</a>
+								<a href="" class="btn btn-default btn-sm mb-4" data-toggle="modal" data-target="#rateProductForm" style="float:right">Rate Product</a>
 
 								<!-- Modal -->
-								<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal fade" id="rateProductForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header text-center">
-												<h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+												<h4 class="modal-title w-100 font-weight-bold">Rate Product</h4>
 												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 													<span aria-hidden="true">&times;</span>
 												</button>
 											</div>
 											<div class="modal-body mx-3">
-												<div class="md-form mb-5">
-													<i class="fa fa-user prefix grey-text"></i>
-													<input type="text" id="form34" class="form-control validate">
-													<label data-error="wrong" data-success="right" for="form34">Your name</label>
-												</div>
-
-												<div class="md-form mb-5">
-													<i class="fa fa-envelope prefix grey-text"></i>
-													<input type="email" id="form29" class="form-control validate">
-													<label data-error="wrong" data-success="right" for="form29">Your email</label>
-												</div>
+												<div class="text-center">
+													<span style="padding: 0px; display: inline-block;" class="text-success">
+									               		<i class="fa fa-star fa-2x"></i>
+									               		<i class="fa fa-star fa-2x"></i>
+									               		<i class="fa fa-star fa-2x"></i>
+									               		<i class="fa fa-star fa-2x"></i>
+									               		<i class="fa fa-star-half-o fa-2x"></i>
+									               	</span>
+								               	</div>											
 
 												<div class="md-form mb-5">
 													<i class="fa fa-tag prefix grey-text"></i>
@@ -237,12 +256,16 @@
 												<div class="md-form">
 													<i class="fa fa-pencil prefix grey-text"></i>
 													<textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
-													<label data-error="wrong" data-success="right" for="form8">Your message</label>
+													<label data-error="wrong" data-success="right" for="form8">Description</label>
 												</div>
-
+												<div class="md-form mb-5">
+													<i class="fa fa-user prefix grey-text"></i>
+													<input type="text" id="form34" class="form-control validate">
+													<label data-error="wrong" data-success="right" for="form34">Name</label>
+												</div>
 											</div>
 											<div class="modal-footer d-flex justify-content-center">
-												<button class="btn btn-unique">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+												<button class="btn btn-unique"><i class="fa fa-floppy-o ml-1"></i> Save</button>
 											</div>
 										</div>
 									</div>
@@ -251,17 +274,95 @@
 						</div>
 				<div class="row my-3 mr-1">
 					<div class="col-5 text-center">
-						<h1 class="h1-responsive font-weight-bold">4.4 <i class="fa fa-star"></i></h2>
+						<h1 class="h1-responsive font-weight-bold">4.4 <i class="fa fa-star"></i></h1>
 							<label class="small dark-grey-text">1,200 Ratings & 40 Reviews</label>
 						</div>
 						<div class="col-7">
 							<div class="small">5 <i class="fa fa-star mr-1"></i>
 								<div class="progress md-progress mt-2" style="position: absolute !important; display: inline; width: 80%;">
-									<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+									<div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="small">4 <i class="fa fa-star mr-1"></i>
+								<div class="progress md-progress mt-2" style="position: absolute !important; display: inline; width: 80%;">
+									<div class="progress-bar bg-success" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="small">3 <i class="fa fa-star mr-1"></i>
+								<div class="progress md-progress mt-2" style="position: absolute !important; display: inline; width: 80%;">
+									<div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="small">2 <i class="fa fa-star mr-1"></i>
+								<div class="progress md-progress mt-2" style="position: absolute !important; display: inline; width: 80%;">
+									<div class="progress-bar bg-warning" role="progressbar" style="width: 15%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="small">1 <i class="fa fa-star mr-1"></i>
+								<div class="progress md-progress mt-2" style="position: absolute !important; display: inline; width: 80%;">
+									<div class="progress-bar bg-danger" role="progressbar" style="width: 5%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<hr>
+					
+					<div class="row">
+						<div class="col m-1">	
+							<span class="badge badge-success">4 <i class="fa fa-star"></i></span>
+							<span for="" class="small font-weight-bold mx-2 ">Awesome</span>
+							<p class="small my-1">
+								ajshduyagyudgayudsgyaugdyuagyudgayugdyuagdyg
+								sdhahsuausduasgfuygausgaugfuagfuausfgauifausgfiua
+								sjfgaugfuagyfgaygaygfyuagyfgayfgyuagfag...<a href="#">More</a>
+							</p>
+							<p class="small grey-text my-2">
+								<span class="font-weight-bold"> Kuldeep Singh</span> 11 Sep,2018
+							</p>
+
+						</div>							
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col m-1">	
+							<span class="badge badge-success">4 <i class="fa fa-star"></i></span>
+							<span for="" class="small font-weight-bold mx-2 ">Best Quality</span>
+							<p class="small my-1">
+								sdsdsdsafsdkfkjsdhfhudhfushfhsidfidsifhisdfsaf
+								sdhbfhhsdhfhuisdhfuidshfuhdufhudhfufhuihdfuhasfas
+								sdjfnjsdfjhdsufhudhufhduhfufudhufhduffhnn...<a href="#">More</a>
+							</p>
+							<p class="small grey-text my-2">
+								<span class="font-weight-bold"> Kabir Gupta</span> 10 Sep,2018
+							</p>
+
+						</div>							
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col m-1">	
+							<span class="badge badge-success">4 <i class="fa fa-star"></i></span>
+							<span for="" class="small font-weight-bold mx-2 ">W-O-W</span>
+							<p class="small my-1">
+								asdfghhjklpoiuyyttrewwqzzxccvbbmkkjhggfdesafsa
+								skdhuiay7yuihdasjdkjasidioawudhadjkandsafasf
+								ajshdjahsufhaushudiahudasnjdnjkasbdjsj...<a href="#">More</a>
+							</p>
+							<p class="small grey-text my-2">
+								<span class="font-weight-bold"> Rajesh Yadav</span> 09 Sep,2018
+							</p>
+
+						</div>							
+					</div>
+					<hr>
+					<div class="mb-3">
+						<span class="small"> All Reviews</span>
+						<span style="float: right;">
+							<a href="#"><i class="fa fa-angle-right" style="color: black"></i></a>
+						</span>
+					</div>
+					
+
 					
 
 
@@ -284,3 +385,9 @@
 			<!--Main container-->
 		</main>
 		<!--Main layout-->
+	<script type="text/javascript">
+        // Material Select Initialization
+        $(document).ready(function() {
+           $('.mdb-select').material_select();
+         });
+    </script>
