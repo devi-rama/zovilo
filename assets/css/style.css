@@ -90,3 +90,34 @@ h4 {
 	color:#9da9b9 !important;
 	
 }
+
+.md-pills li a.nav-link.active {
+	background-color: #369;
+}
+
+.qtyminus {
+	cursor:pointer;
+	width:25px;
+	height:25px;
+	text-align: center;
+	background:url(../assets/img/plus-minus.png) no-repeat;
+	border:none;
+	background-position: 0 -25px;
+
+}
+
+.qty {
+	width: 40px;
+	height: 25px;
+	text-align: center;
+	background-color: #fff;
+	border:none;
+}
+.qtyplus {
+	cursor: pointer;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	background:url(../assets/img/plus-minus.png) no-repeat;
+	border:none; 
+}
